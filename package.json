@@ -1,0 +1,18 @@
+{
+  "name": "mass-production-quality-validation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Windows command facade for the Mass Production Quality Validation local application",
+  "scripts": {
+    "bootstrap": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Bootstrap.ps1",
+    "lint": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Lint.ps1",
+    "typecheck": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Typecheck.ps1",
+    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Test.ps1",
+    "gate": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Gate.ps1",
+    "dev": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Dev.ps1",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:typecheck": "npm --prefix frontend run typecheck",
+    "frontend:test": "npm --prefix frontend run test",
+    "frontend:build": "npm --prefix frontend run build"
+  }
+}

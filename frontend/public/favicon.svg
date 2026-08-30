@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mass Production Quality Validation">
+  <rect width="64" height="64" rx="16" fill="#10373a"/>
+  <path d="M16 17h12c10 0 16 6 16 15s-6 15-16 15H16V17Zm11 22c5 0 8-2 8-7s-3-7-8-7h-3v14h3Z" fill="#f3f7ed"/>
+  <path d="M45 42h7l-4 7-7-4 4-3Z" fill="#e7a957"/>
+</svg>

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "extension_id": "com.massproductionqualityvalidation.oqc-local",
+  "display_name": "Mass Production Quality Validation",
+  "mass_production_quality_validation_version": "0.1.0",
+  "contract_majors": {
+    "extension_package": 1,
+    "manual_intake_api": 1,
+    "scheduler_queue": null
+  },
+  "scheduler_compatibility": {
+    "status": "UNVERIFIED",
+    "phase": "PHASE_5",
+    "discovery": "BLOCKED_BY_INPUT"
+  },
+  "runtime": {
+    "python": "3.12",
+    "lock_path": "requirements/runtime.lock",
+    "lock_sha256": "006cd92b10a240fec23456717295e0083cb8e93dd9a10e7f61fc2654ba6801f8",
+    "offline_wheelhouse_included": false
+  },
+  "entrypoint": "Launch-MassProductionQualityValidation.ps1",
+  "install_policy": {
+    "scope": "CURRENT_USER_LOCAL",
+    "code_data_separated": true,
+    "uninstall_data_default": "PRESERVE",
+    "registry": false,
+    "autostart": false,
+    "windows_service": false
+  }
+}
