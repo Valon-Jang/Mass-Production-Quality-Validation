@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mass-production-quality-validation"
+version = "0.1.0"
+description = "Evidence-driven mass production quality validation and release-gate evaluation"
+requires-python = ">=3.10"
+authors = [{name = "Valon Jang"}]
+
+[project.scripts]
+mass-production-quality-validation = "mass_production_quality_validation.cli:main"

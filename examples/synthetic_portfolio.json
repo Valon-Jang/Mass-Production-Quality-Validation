@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "item_id": "COMP-A",
+      "name": "Synthetic molded component",
+      "validation_required": true,
+      "validation_status": "PASS",
+      "quality_status": "APPROVED",
+      "approval_required": true,
+      "approval_status": "APPROVED",
+      "evidence_status": "COMPLETE",
+      "risk_level": "LOW",
+      "risk_open": false,
+      "owner": "Quality Engineer",
+      "target_date": "2026-09-05",
+      "completed_date": "2026-08-28",
+      "evidence_refs": ["DIMENSION_REPORT", "MATERIAL_CERT", "PILOT_RESULT"]
+    },
+    {
+      "item_id": "COMP-B",
+      "name": "Synthetic protective insert",
+      "validation_required": true,
+      "validation_status": "IN_PROGRESS",
+      "quality_status": "REVIEWING",
+      "approval_required": false,
+      "approval_status": "NOT_REQUIRED",
+      "evidence_status": "PARTIAL",
+      "risk_level": "HIGH",
+      "risk_open": true,
+      "owner": "Development Engineer",
+      "target_date": "2026-09-03",
+      "next_action": "Complete transport validation and close open risk"
+    }
+  ]
+}
