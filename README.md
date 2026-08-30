@@ -8,6 +8,45 @@
   />
 </p>
 
+## Why I built this
+
+This project started from a recurring problem I kept seeing in **packaging-container mass production**.
+
+Packaging is easy to treat as "just packaging," so quality inspection can receive less attention than the product inside it. Many packaging suppliers are also relatively small operations with limited quality-system resources. The problem is that once a packaging specification reaches mass production, small dimensional or process variations that looked harmless during development can turn into repeated production issues.
+
+The obvious response would be to collect every supplier OQC sheet and analyze it manually. But that felt like the wrong optimization. If an engineer has to keep receiving spreadsheets, cleaning them, checking distributions, comparing suppliers, and rebuilding the same analysis again and again, the analysis itself becomes another source of loss — and it still does not improve the underlying system.
+
+So I started from a different question:
+
+> **What if the quality data could collect itself, accumulate over time, and gradually give us better evidence for what the quality standard should be?**
+
+The idea became a closed learning loop:
+
+```text
+Supplier OQC evidence
+        ↓
+Automatic collection and normalization
+        ↓
+Traceable historical quality data
+        ↓
+Variation / failure / process-pattern analysis
+        ↓
+Evidence for better inspection criteria
+        ↓
+Human review and approval
+        ↓
+Improved mass-production quality standards
+        ↓
+More production data
+        ↺
+```
+
+The goal is **not** to let supplier data automatically rewrite an official specification. Supplier evidence remains evidence. Official limits, mappings, data trust, and release decisions stay under explicit human control.
+
+What the system should do automatically is the expensive repetitive part: preserve raw OQC evidence, normalize it into a comparable structure, accumulate history, expose abnormal patterns and variation, and eventually surface **evidence-backed candidates for new or improved quality criteria**.
+
+In other words, instead of asking an engineer to keep reading OQC sheets forever, I wanted the production data itself to become the raw material for continuously improving the quality system.
+
 Mass Production Quality Validation is a local-first OQC data engine for traceable quality decisions and
 specification optimization. The implementation foundation Phase 0 has passed,
 and the Phase 1 File Store -> Scanner -> Mapping Preview, persistent Mapping
