@@ -17,5 +17,6 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -v
       - run: python -m mass_production_quality_validation examples/synthetic_portfolio.json --as-of 2026-08-31 --pretty
+      - run: python -m pip install setuptools
       - run: python -m pip install -e . --no-build-isolation
       - run: mass-production-quality-validation examples/synthetic_portfolio.json --as-of 2026-08-31 --pretty
