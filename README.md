@@ -1,5 +1,13 @@
 # Mass Production Quality Validation
 
+<p align="center">
+  <img
+    src="docs/assets/mass-production-quality-validation-emblem.png"
+    alt="Mass Production Quality Validation emblem"
+    width="420"
+  />
+</p>
+
 Mass Production Quality Validation is a local-first OQC data engine for traceable quality decisions and
 specification optimization. The implementation foundation Phase 0 has passed,
 and the Phase 1 File Store -> Scanner -> Mapping Preview, persistent Mapping
